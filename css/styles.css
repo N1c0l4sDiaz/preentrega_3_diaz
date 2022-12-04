@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    color: white;
+    background-image: url(../img/nebulaAquilae.png);
+    background-size: cover;
+}
+header{background-color: black;}
+ul{background-color: black;
+color: azure;}
+div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    background-position: 300;
+}
+.welcome{
+    gap: 5px;
+    justify-content: flex-end;
+    align-content: flex-end;
+    justify-items: flex-end;
+}
+.menu{
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+@media (max-whidth: 768px) {
+    .menu {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}

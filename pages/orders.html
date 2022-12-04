@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="shortcut icon" href="../img/favicon.bmp" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="welcome">Pedidos</h1> 
+        <div class="menu">
+            <a href="../index.html">Inicio</a>
+            <a href="./gallery.html">Galería</a>
+            <a href="./orders.html">Pedidos</a>
+            <a href="./highlightsOutlet.html">Destacados y Outlet</a>
+            <a href="./about.html">Info y contacto</a>
+        </div>
+    </header>
+    <table border="1" cellspacing="5">
+        <tr>
+            <th>Chico</th>
+            <th>Mediano</th>
+            <th>Grande</th>
+            <th>Especial</th>
+        </tr>
+        <tr>
+            <td>$1000</td>
+            <td>$1500</td>
+            <td>$2000</td>
+            <td>*Dependiendo del área total</td>
+        </tr>
+    </table>
+    <br>
+    <a href="https://ar.pinterest.com/" target="_blank">Mirá algunas ideas</a>
+    <br>
+    <h2>¡Hacé tu pedido! :)</h2>
+    <fieldset>
+        <legend>Lo que quieras</legend>
+        <form action="send.php" method="get">
+            <label for="name">Nombre</label>
+            <input type="name" id="name" placeholder="Ingresa tu nombre" required>
+            <br><br>
+            <label for="mail">Email</label>
+            <input type="email" id="mail" placeholder="Inrgresa correctamente tu email" required>
+            <br><br>
+            <label for="pass">Tu contraseña</label>
+            <input type="password" name="pass" id="pass" placeholder="Contraseña" required>
+            <br><br>
+            <label for="size">¿En qué tamaño quieres tu dibujo?</label>
+            <select name="size" id="size" required>
+                <option value="0" selected disabled>Selecciona una opción</option>
+                <option value="s">Chico</option>
+                <option value="m">Mediano</option>
+                <option value="l">Grande</option>
+                <option value="special">Especial*</option>
+            </select>
+            <br><br>
+            <label for="img">Incluye una imagen de referencia (opcional)</label>
+            <br><br>
+            <input type="file">
+            <br><br>
+            <label for="marco">¿Quieres un marco?</label>
+            <input type="radio" name="marco" id="yes">Si
+            <input type="radio" name="marco" id="no">No
+            <br><br>
+            <label for="extra">Deja tu comentario</label>
+            <br>
+            <textarea name="extra" id="extra" cols="30" rows="10" placeholder="Opcional"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Empezar de 0">
+        </form>
+    </fieldset>
+</body>
+</html>
